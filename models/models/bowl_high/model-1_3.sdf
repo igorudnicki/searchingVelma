@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<sdf version="1.3">
+  <model name="bowl_high">
+    <link name="link">
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://bowl_high/meshes/bowl_high.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bowl_high/meshes/bowl_high.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

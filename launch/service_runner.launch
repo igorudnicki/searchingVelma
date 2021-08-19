@@ -1,0 +1,25 @@
+<launch>
+
+
+
+	<!-- Z SILNIKIEM DART ten node nie ma sensu
+
+	<node name="move_base" pkg="searcher" type="move_base" 		output="screen">
+	<rosparam file="$(find searcher)/yaml/local_costmap.yaml" 				command="load" />
+	<rosparam file="$(find searcher)/yaml/global_costmap.yaml" 				command="load" />
+	<rosparam file="$(find searcher)/yaml/global_planner.yaml" 				command="load" />
+	<rosparam file="$(find searcher)/yaml/local_planner.yaml" 				command="load" />
+	</node>-->
+
+	<node name="beer_service" pkg="searcher" type="beer_service.py" 	output="screen"/>
+
+	<node name="look_around_service" pkg="searcher" type="lookup_service.py" output="screen"/>
+
+	<node name="opening_service" pkg="searcher" type="opening_service.py" output="screen"/>
+
+	<node name="object_tf_publisher" pkg="searcher" type="object_tf_publisher.py" output="screen"/>
+
+	<node name="cylinder_segmentation" pkg="searcher" type="cylinder_segmentation" output="screen"/>
+
+</launch>
+

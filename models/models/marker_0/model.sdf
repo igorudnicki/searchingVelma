@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="marker_0">
+    <link name="link">
+      <gravity>false</gravity>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.00079</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00079</iyy>
+          <iyz>0</iyz>
+          <izz>0.00025</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://marker_0/meshes/marker_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
